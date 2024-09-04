@@ -14,7 +14,7 @@ const book = "ChemIsTry";
 if (subject.toLowerCase === book.toLowerCase) {
   console.log("Aibar Exam a sob kisu Fatay felbo ");
 } else {
-  console.log("pora suna na korle fail marbo");
+  // console.log("pora suna na korle fail marbo");
 }
 
 const drink = "water";
@@ -25,3 +25,4 @@ if (drink.trim === liquid.trim) {
 } else {
   console.log("pani na khele bachbo na");
 }
+// console.log();
