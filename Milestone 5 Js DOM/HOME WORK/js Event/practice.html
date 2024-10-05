@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 1(Make Green button)</title>
+</head>
+
+<body>
+    <h1>Make green page</h1>
+    <button id="make-green">Make Green</button>
+    <button id="make-reset">Reset</button>
+    <br>
+    <br>
+
+
+    <h1 id="secret-info">My secret info</h1>
+    <input type="text" id="delete-confirm" placeholder="please type delete">
+    <button id="btn-delete" disabled>Delete</button>
+    <script>
+        //task 1
+        document.getElementById('make-green').addEventListener('click', function () {
+            document.body.style.backgroundColor = 'green'
+        })
+        // task 2
+        document.getElementById('make-reset').addEventListener('click', function () {
+            document.body.style.backgroundColor = 'white'
+        })
+
+        //task 3
+        document.getElementById('delete-confirm').addEventListener('keyup', function (event) {
+            const text = event.target.value
+            const deleteButton = document.getElementById('btn-delete')
+            if (text === 'delete') {
+                deleteButton.removeAttribute('disabled')
+            } else {
+                deleteButton.setAttribute('disabled', true)
+            }
+        })
+        document.getElementById('btn-delete').addEventListener('click', function () {
+            const secret = document.getElementById('secret-info')
+            secret.style.display = 'none'
+        })
+        const reset = document.getElementById('delete-confirm')
+
+    </script>
+</body>
+
+</html>

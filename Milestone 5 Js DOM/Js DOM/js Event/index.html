@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM EVENT</title>
+</head>
+
+<body>
+    <h1 onclick="console.log('this is not a button');">Ajke DOM er Special Class</h1>
+    <button onclick="console.log(7);">click me</button>
+    <button onclick="console.log(50);">Another button</button>
+    <br>
+    <button onclick="document.body.style.backgroundColor='green'">Make green</button>
+    <button onclick="makeRed()">Make Red</button>
+    <!-- option 1(directly set on the HTML elements)  -->
+    <button id="make-blue">Make Blue</button>
+    <!--option 2()  -->
+    <button id="make-purple">Make Purple</button>
+    <button id="make-pink">Make Pink</button>
+    <button id="make-tomato">Make Tomato</button>
+    <button id="make-black">Make Black</button>
+    <script></script>
+    <script src="js/event.js"></script>
+</body>
+
+</html>
